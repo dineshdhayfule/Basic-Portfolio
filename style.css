@@ -166,7 +166,7 @@ li {
     }
 }
 
-.button {
+/* .button {
     cursor: pointer;
     background-color: black;
     width: fit-content;
@@ -177,17 +177,19 @@ li {
     border: 1px solid transparent;
     position: relative;
     z-index: 1;
-}
+} */
 
-.button img {
+/* .button img {
     margin-left: 10px;
-}
+} */
 
 .section1-right {
     position: relative;
 }
 
-
+.absolute {
+    position: absolute;
+}
 
 .user-img {
     padding: 2.5rem;
@@ -218,6 +220,80 @@ li {
 }
 
 
+
+.icon-dots {
+    z-index: 1;
+    bottom: -1rem;
+    right: 0;
+    animation: dot-anim 5s infinite;
+}
+
+@keyframes dot-anim {
+    0% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-15px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+.icon-cube {
+    z-index: 1;
+    top: -0.8em;
+    right: 1em;
+    animation: cube-anim 5s infinite;
+}
+
+@keyframes cube-anim {
+    0% {
+        transform: translateY(0px) rotateY(0deg);
+    }
+
+    50% {
+        transform: translateY(-12px) rotateY(180deg);
+    }
+
+    100% {
+        transform: translateY(0px) rotateY(360deg);
+    }
+}
+
+.icon-circle {
+    z-index: 1;
+    bottom: 0;
+    left: 0;
+    animation: circle-anim 5s infinite;
+}
+
+@keyframes circle-anim {
+    50% {
+        bottom: 10%;
+        left: 5%;
+    }
+}
+
+.icon-plus {
+    z-index: 1;
+    bottom: -1rem;
+    left: 0;
+    animation: plus-anim 5s infinite;
+}
+
+.icon-zigzags {
+    z-index: 1;
+}
+
+@keyframes plus-anim {
+    50% {
+        bottom: 10%;
+        left: 5%;
+    }
+}
 
 .third-div {
     width: 90vw;
@@ -481,7 +557,7 @@ li {
 
 /*footer*/
 footer {
-    background-color: #151515;
+    background-color: #30353c;
     color: #ffffff;
     text-align: center;
     padding: 60px 0;
@@ -506,7 +582,7 @@ footer {
 }
 
 .feedback {
-    background-color: #151515;
+    background-color: #30353c;
     max-width: 500px;
     margin: 50px auto;
     padding: 20px;
@@ -523,8 +599,7 @@ textarea {
 input,
 textarea {
     color: #ffffff;
-    background-color: #151515;
-
+    background-color: #30353c;
     width: 100%;
     padding: 15px;
     border: 1px solid rgb(255, 255, 255);
@@ -535,7 +610,7 @@ textarea {
 }
 
 input[type="submit"] {
-    background-color: #151515;
+    background-color: #30353c;
     color: rgb(255, 255, 255);
     padding: 15px;
     border: none;
@@ -549,7 +624,7 @@ input[type="submit"] {
 
 input[type="submit"]:hover {
     color: white;
-    background-color: #151515;
+    background-color: #000000;
 }
 
 ::placeholder {
